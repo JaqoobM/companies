@@ -1,0 +1,29 @@
+<h1>Rejestracja</h1>
+
+<form method="POST">
+
+     <div class="mb-3">
+
+          <label class="form-label" for="email">Email</label>
+          <input type="email" class="form-label <%- errors?.email ? 'is-invalid' : '' %>" name="email" value="<%- form.email %>" id="email" required>
+
+          <% if (errors?.email) { %>
+               <div class="invalid-feedback"><%= errors.email.message %></div>
+               <% } %>
+
+     </div>
+
+     <div class="mb-3">
+          
+          <label class="form-label" for="password">Hasło</label>
+          <input type="password" class="form-label <%- errors?.password ? 'is-invalid' : '' %>" name="password" value="<%- form.password %>" id="password" required>
+
+          <% if (errors?.password) { %>
+               <div class="invalid-feedback"><%= errors.password.message %></div>
+               <% } %>
+
+     </div>
+
+     <button class="btn btn-primary">zarejestruj</button>
+
+</form>
