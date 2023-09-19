@@ -7,12 +7,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                          <a class="nav-link <%- url === '/' ? 'active' : '' %>" href="/">Strona główna</a>
-                    </li>
-                    <li class="nav-item">
+                         <a class="nav-link <%- url === '/' ? 'active' : '' %>" href="/">Strona główna</a>
                          <a class="nav-link <%- url.includes('/firmy') ? 'active' : '' %>" href="/firmy/">Firmy</a>
-                         <a class="nav-link <%- url.includes('/zarejestruj') ? 'active' : '' %>" href="/zarejestruj/">Rejestracja</a>
+                         <a class="nav-link <%- url.includes('/zarejestruj') ? 'active' : '' %>"
+                              href="/zarejestruj/">Rejestracja</a>
                     </li>
                </ul>
           </div>
